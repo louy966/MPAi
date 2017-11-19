@@ -1,0 +1,23 @@
+# gmm-acc-stats-ali exp/tri1/22.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri1/ali.2.gz|" exp/tri1/22.2.acc 
+# Started at Thu Nov  9 17:24:28 NZDT 2017
+#
+gmm-acc-stats-ali exp/tri1/22.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri1/ali.2.gz|' exp/tri1/22.2.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance f006_oldfemale-word-körero-R006M-07 avg. like is 22.2997 over 48 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance f006_oldfemale-word-tënei-R006M avg. like is 32.9867 over 71 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance f007_oldfemale-word-kaumätua-R007M-02 avg. like is 20.8522 over 54 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance f007_oldfemale-word-wähi-R007M-14 avg. like is 27.6734 over 49 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance f008_oldfemale-word-mätao-R008M avg. like is 31.7511 over 64 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance f008_oldfemale-word-wähi-R008M-02 avg. like is 30.3878 over 41 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance f009_oldfemale-word-marae-R009M-12 avg. like is 28.6287 over 38 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance f009_oldfemale-word-whä-R009M-01 avg. like is 29.7014 over 24 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance f010_oldfemale-word-mihi-R010M-02b avg. like is 25.1366 over 34 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance m001_oldmale-word-körero-K001M-01 avg. like is 23.5118 over 36 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 590 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance m001_oldmale-word-waka-K001M-05a avg. like is 17.8932 over 26 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:112) Done 590 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = 26.8794 over 22731 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  9 17:24:29 NZDT 2017, elapsed time 1 seconds

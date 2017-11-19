@@ -1,0 +1,1143 @@
+# gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4b/graph/words.txt exp/tri4b/final.alimdl exp/tri4b/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri4b/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri4b/decode.si/lat.2.gz" 
+# Started at Thu Nov  9 17:32:33 NZDT 2017
+#
+gmm-latgen-faster --max-active=2000 --beam=10.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri4b/graph/words.txt exp/tri4b/final.alimdl exp/tri4b/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri4b/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri4b/decode.si/lat.2.gz' 
+apply-cmvn --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri4b/final.mat ark:- ark:- 
+yf005_youngfemale-word-awa-L1H05M-05a awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-05a is -4.60043 over 25 frames.
+yf005_youngfemale-word-awa-L1H05M-05b1 awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-05b1 is -4.22837 over 34 frames.
+yf005_youngfemale-word-awa-L1H05M-05b2 awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-05b2 is -4.25669 over 34 frames.
+yf005_youngfemale-word-awa-L1H05M-12a awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-12a is -4.67 over 28 frames.
+yf005_youngfemale-word-awa-L1H05M-12b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-12b is -5.38397 over 34 frames.
+yf005_youngfemale-word-awa-L1H05M-12c awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-awa-L1H05M-12c is -6.20764 over 35 frames.
+yf005_youngfemale-word-e_noho-L1H05M-12 e_noho 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-e_noho-L1H05M-12 is -5.51577 over 31 frames.
+yf005_youngfemale-word-haere_mai-L1H05M-06 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-haere_mai-L1H05M-06 is -5.17282 over 31 frames.
+yf005_youngfemale-word-haere_mai-L1H05M-10 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-haere_mai-L1H05M-10 is -4.97073 over 43 frames.
+yf005_youngfemale-word-hapü-L1H05M-02 hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hapü-L1H05M-02 is -5.94407 over 27 frames.
+yf005_youngfemale-word-hapü-L1H05M-03 moutere 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hapü-L1H05M-03 is -5.09365 over 33 frames.
+yf005_youngfemale-word-hau-L1H05M pai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hau-L1H05M is -4.50629 over 93 frames.
+yf005_youngfemale-word-hei-L1H05M hei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hei-L1H05M is -4.38931 over 87 frames.
+yf005_youngfemale-word-hoe-L1H05M hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hoe-L1H05M is -4.43456 over 109 frames.
+yf005_youngfemale-word-hoihoi-L1H05M hoihoi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hoihoi-L1H05M is -4.35887 over 129 frames.
+yf005_youngfemale-word-hou-L1H05M hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hou-L1H05M is -4.68773 over 87 frames.
+yf005_youngfemale-word-hë-L1H05M hë 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hë-L1H05M is -4.45944 over 81 frames.
+yf005_youngfemale-word-hï-L1H05M hï 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-hï-L1H05M is -4.45686 over 101 frames.
+yf005_youngfemale-word-iwa-L1H05M-02a1 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-iwa-L1H05M-02a1 is -4.89382 over 22 frames.
+yf005_youngfemale-word-iwa-L1H05M-02a2 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-iwa-L1H05M-02a2 is -5.68973 over 15 frames.
+yf005_youngfemale-word-iwi-L1H05M-02a iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-iwi-L1H05M-02a is -5.14717 over 31 frames.
+yf005_youngfemale-word-iwi-L1H05M-02b iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-iwi-L1H05M-02b is -4.72628 over 32 frames.
+yf005_youngfemale-word-ka_pai-L1H05M-08 ka_pai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-ka_pai-L1H05M-08 is -5.61334 over 30 frames.
+yf005_youngfemale-word-karakia-L1H05M-12 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-karakia-L1H05M-12 is -5.60379 over 55 frames.
+yf005_youngfemale-word-kaumätua-L1H05M-12 kaumätua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kaumätua-L1H05M-12 is -5.24557 over 75 frames.
+yf005_youngfemale-word-kei-L1H05M kei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kei-L1H05M is -4.61047 over 93 frames.
+yf005_youngfemale-word-kia_ora-L1H05M-04a1 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kia_ora-L1H05M-04a1 is -5.11959 over 38 frames.
+yf005_youngfemale-word-kia_ora-L1H05M-04a2 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kia_ora-L1H05M-04a2 is -5.48951 over 32 frames.
+yf005_youngfemale-word-kia_ora-L1H05M-06 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kia_ora-L1H05M-06 is -5.07929 over 32 frames.
+yf005_youngfemale-word-kia_ora-L1H05M-10 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kia_ora-L1H05M-10 is -5.7548 over 27 frames.
+yf005_youngfemale-word-käinga-L1H05M-06 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-käinga-L1H05M-06 is -5.48732 over 41 frames.
+yf005_youngfemale-word-käinga-L1H05M-12a käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-käinga-L1H05M-12a is -5.31233 over 51 frames.
+yf005_youngfemale-word-käinga-L1H05M-12b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-käinga-L1H05M-12b is -5.04332 over 35 frames.
+yf005_youngfemale-word-kë-L1H05M hë 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kë-L1H05M is -4.42666 over 95 frames.
+yf005_youngfemale-word-kï-L1H05M kï 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-kï-L1H05M is -4.70242 over 82 frames.
+yf005_youngfemale-word-körero-L1H05M-02 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-körero-L1H05M-02 is -5.03846 over 42 frames.
+yf005_youngfemale-word-körero-L1H05M-04 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-körero-L1H05M-04 is -4.89681 over 59 frames.
+yf005_youngfemale-word-körero-L1H05M-10 waru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-körero-L1H05M-10 is -4.9714 over 36 frames.
+yf005_youngfemale-word-körero-L1H05M-11 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-körero-L1H05M-11 is -5.16695 over 42 frames.
+yf005_youngfemale-word-mao-L1H05M mao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mao-L1H05M is -4.61761 over 130 frames.
+yf005_youngfemale-word-marae-L1H05M-02a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-02a is -4.7429 over 39 frames.
+yf005_youngfemale-word-marae-L1H05M-02b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-02b is -5.53066 over 32 frames.
+yf005_youngfemale-word-marae-L1H05M-04 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-04 is -4.81065 over 26 frames.
+yf005_youngfemale-word-marae-L1H05M-05a1 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-05a1 is -5.27694 over 34 frames.
+yf005_youngfemale-word-marae-L1H05M-05a2 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-05a2 is -4.56708 over 42 frames.
+yf005_youngfemale-word-marae-L1H05M-05b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-05b is -5.15185 over 26 frames.
+yf005_youngfemale-word-marae-L1H05M-05c marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-marae-L1H05M-05c is -4.61945 over 29 frames.
+yf005_youngfemale-word-matariki-L1H05M-12 matariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-matariki-L1H05M-12 is -5.29201 over 54 frames.
+yf005_youngfemale-word-matiu-L1H05M matiu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-matiu-L1H05M is -4.7599 over 103 frames.
+yf005_youngfemale-word-mau-L1H05M mau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mau-L1H05M is -4.6484 over 105 frames.
+yf005_youngfemale-word-maunga-L1H05M-02 türanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-maunga-L1H05M-02 is -5.04494 over 41 frames.
+yf005_youngfemale-word-moutere-L1H05M moutere 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-moutere-L1H05M is -4.70881 over 122 frames.
+yf005_youngfemale-word-mäori-L1H05M-03 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mäori-L1H05M-03 is -4.7615 over 29 frames.
+yf005_youngfemale-word-mäori-L1H05M-09 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mäori-L1H05M-09 is -4.87586 over 54 frames.
+yf005_youngfemale-word-mäori-L1H05M-10 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mäori-L1H05M-10 is -4.9625 over 37 frames.
+yf005_youngfemale-word-mätao-L1H05M mätao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mätao-L1H05M is -4.19954 over 122 frames.
+yf005_youngfemale-word-mätau-L1H05M mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mätau-L1H05M is -4.16452 over 113 frames.
+yf005_youngfemale-word-mätou-L1H05M mätou 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-mätou-L1H05M is -4.18606 over 109 frames.
+yf005_youngfemale-word-ono-L1H05M-01 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-ono-L1H05M-01 is -5.34098 over 31 frames.
+yf005_youngfemale-word-ono-L1H05M-08 awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-ono-L1H05M-08 is -4.70601 over 26 frames.
+yf005_youngfemale-word-pae-L1H05M pae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pae-L1H05M is -4.37299 over 105 frames.
+yf005_youngfemale-word-pai-L1H05M pau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pai-L1H05M is -4.26882 over 104 frames.
+yf005_youngfemale-word-pao-L1H05M pao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pao-L1H05M is -4.31135 over 102 frames.
+yf005_youngfemale-word-pau-L1H05M pau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pau-L1H05M is -4.17166 over 97 frames.
+yf005_youngfemale-word-pou-L1H05M hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pou-L1H05M is -4.23081 over 84 frames.
+yf005_youngfemale-word-pö-L1H05M pö 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pö-L1H05M is -4.44545 over 85 frames.
+yf005_youngfemale-word-pöwhiri-L1H05M-10 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-pöwhiri-L1H05M-10 is -5.68168 over 38 frames.
+yf005_youngfemale-word-rima-L1H05M-03 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-rima-L1H05M-03 is -5.43254 over 21 frames.
+yf005_youngfemale-word-rua-L1H05M-03 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-rua-L1H05M-03 is -4.89313 over 13 frames.
+yf005_youngfemale-word-rua-L1H05M-10 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-rua-L1H05M-10 is -5.3794 over 16 frames.
+yf005_youngfemale-word-tae-L1H05M pae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tae-L1H05M is -4.27746 over 103 frames.
+yf005_youngfemale-word-tahi-L1H05M-02 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tahi-L1H05M-02 is -4.83874 over 21 frames.
+yf005_youngfemale-word-tahi-L1H05M-07 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tahi-L1H05M-07 is -5.40521 over 20 frames.
+yf005_youngfemale-word-tahi-L1H05M-11 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tahi-L1H05M-11 is -5.07983 over 37 frames.
+yf005_youngfemale-word-tai-L1H05M pai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tai-L1H05M is -4.03825 over 105 frames.
+yf005_youngfemale-word-tamariki-L1H05M-11 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tamariki-L1H05M-11 is -5.34587 over 46 frames.
+yf005_youngfemale-word-tamariki-L1H05M-12a tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tamariki-L1H05M-12a is -5.72518 over 53 frames.
+yf005_youngfemale-word-tamariki-L1H05M-12b tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tamariki-L1H05M-12b is -5.85323 over 57 frames.
+yf005_youngfemale-word-tangi-L1H05M-06a1.wav tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tangi-L1H05M-06a1.wav is -5.37021 over 21 frames.
+yf005_youngfemale-word-tangi-L1H05M-06a2 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tangi-L1H05M-06a2 is -5.49774 over 23 frames.
+yf005_youngfemale-word-tangi-L1H05M-13 tangi rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tangi-L1H05M-13 is -5.70547 over 31 frames.
+yf005_youngfemale-word-tauhou-L1H05M-12 pau mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tauhou-L1H05M-12 is -5.47666 over 57 frames.
+yf005_youngfemale-word-tekau-L1H05M-10 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tekau-L1H05M-10 is -5.67565 over 31 frames.
+yf005_youngfemale-word-tikanga-L1H05M-10 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tikanga-L1H05M-10 is -6.25161 over 40 frames.
+yf005_youngfemale-word-toetoe-L1H05M toetoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-toetoe-L1H05M is -4.86305 over 105 frames.
+yf005_youngfemale-word-toi-L1H05M toi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-toi-L1H05M is -4.64173 over 104 frames.
+yf005_youngfemale-word-toru-L1H05M-02 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-toru-L1H05M-02 is -6.00329 over 34 frames.
+yf005_youngfemale-word-toru-L1H05M-05 toru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-toru-L1H05M-05 is -5.20134 over 19 frames.
+yf005_youngfemale-word-täne-L1H05M täne 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-täne-L1H05M is -5.0124 over 96 frames.
+yf005_youngfemale-word-tënei-L1H05M tënei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tënei-L1H05M is -5.51215 over 76 frames.
+yf005_youngfemale-word-tïmata-L1H05M-04 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tïmata-L1H05M-04 is -5.75094 over 35 frames.
+yf005_youngfemale-word-tïmata-L1H05M-10 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tïmata-L1H05M-10 is -5.76116 over 35 frames.
+yf005_youngfemale-word-tïmata-L1H05M-12 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tïmata-L1H05M-12 is -6.27013 over 43 frames.
+yf005_youngfemale-word-tü-L1H05M tü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-tü-L1H05M is -5.27703 over 85 frames.
+yf005_youngfemale-word-türanga-L1H05M-10 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-türanga-L1H05M-10 is -5.90365 over 38 frames.
+yf005_youngfemale-word-waewae-L1H05M-08 waewae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waewae-L1H05M-08 is -4.24374 over 58 frames.
+yf005_youngfemale-word-waiata-L1H05M-07 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waiata-L1H05M-07 is -5.63768 over 30 frames.
+yf005_youngfemale-word-waiata-L1H05M-08 mätao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waiata-L1H05M-08 is -4.93087 over 51 frames.
+yf005_youngfemale-word-waiata-L1H05M-09 mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waiata-L1H05M-09 is -4.87 over 38 frames.
+yf005_youngfemale-word-waiata-L1H05M-12 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waiata-L1H05M-12 is -4.98779 over 33 frames.
+yf005_youngfemale-word-wairua-L1H05M-11 wairua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-wairua-L1H05M-11 is -4.96391 over 32 frames.
+yf005_youngfemale-word-waka-L1H05M-02 mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-02 is -4.32282 over 50 frames.
+yf005_youngfemale-word-waka-L1H05M-04a waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-04a is -5.41241 over 24 frames.
+yf005_youngfemale-word-waka-L1H05M-04b waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-04b is -6.13105 over 19 frames.
+yf005_youngfemale-word-waka-L1H05M-06a waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-06a is -6.80168 over 21 frames.
+yf005_youngfemale-word-waka-L1H05M-06b waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-06b is -6.15715 over 23 frames.
+yf005_youngfemale-word-waka-L1H05M-06c1 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-06c1 is -6.02673 over 22 frames.
+yf005_youngfemale-word-waka-L1H05M-06c2 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-06c2 is -5.83935 over 24 frames.
+yf005_youngfemale-word-waka-L1H05M-06d waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-06d is -5.36234 over 26 frames.
+yf005_youngfemale-word-waka-L1H05M-07 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-waka-L1H05M-07 is -6.38092 over 37 frames.
+yf005_youngfemale-word-whare-L1H05M-12 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whare-L1H05M-12 is -5.18364 over 20 frames.
+yf005_youngfemale-word-whitu-L1H05M-10 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whitu-L1H05M-10 is -6.11413 over 24 frames.
+yf005_youngfemale-word-whä-L1H05M-03 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whä-L1H05M-03 is -4.9031 over 33 frames.
+yf005_youngfemale-word-whä-L1H05M-10 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whä-L1H05M-10 is -5.26046 over 21 frames.
+yf005_youngfemale-word-whänau-L1H05M-06a whänau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whänau-L1H05M-06a is -4.9827 over 37 frames.
+yf005_youngfemale-word-whänau-L1H05M-06b whänau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-whänau-L1H05M-06b is -5.55701 over 36 frames.
+yf005_youngfemale-word-wä-L1H05M-11 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-wä-L1H05M-11 is -5.24971 over 14 frames.
+yf005_youngfemale-word-wähi-L1H05M-06 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-wähi-L1H05M-06 is -4.73826 over 26 frames.
+yf005_youngfemale-word-wähi-L1H05M-11 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-wähi-L1H05M-11 is -5.43936 over 33 frames.
+yf005_youngfemale-word-wähi-L1H05M-12 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf005_youngfemale-word-wähi-L1H05M-12 is -4.82334 over 27 frames.
+yf006_youngfemale-word-aroha-L1H06M-04 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-aroha-L1H06M-04 is -5.46578 over 46 frames.
+yf006_youngfemale-word-awa-L1H06M-01a awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-awa-L1H06M-01a is -4.17466 over 29 frames.
+yf006_youngfemale-word-e_noho-L1H06M-16 e_noho 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-e_noho-L1H06M-16 is -5.01586 over 32 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-03 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-03 is -5.4712 over 35 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-04 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-04 is -5.53026 over 32 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-12a haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-12a is -4.92295 over 42 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-12b haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-12b is -5.17527 over 39 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-13 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-13 is -5.18924 over 45 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-14 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-14 is -5.73556 over 51 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-15 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-15 is -5.32258 over 37 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-17a haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-17a is -5.26994 over 31 frames.
+yf006_youngfemale-word-haere_mai-L1H06M-17b haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-haere_mai-L1H06M-17b is -4.92707 over 39 frames.
+yf006_youngfemale-word-hapü-L1H06M-10 hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hapü-L1H06M-10 is -6.0448 over 59 frames.
+yf006_youngfemale-word-hapü-L1H06M-17 hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hapü-L1H06M-17 is -6.29729 over 29 frames.
+yf006_youngfemale-word-hau-L1H06M pai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hau-L1H06M is -4.94134 over 76 frames.
+yf006_youngfemale-word-hei-L1H06M hei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hei-L1H06M is -4.346 over 60 frames.
+yf006_youngfemale-word-hoe-L1H06M hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hoe-L1H06M is -4.96994 over 80 frames.
+yf006_youngfemale-word-hoihoi-L1H06M hoihoi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hoihoi-L1H06M is -4.51873 over 91 frames.
+yf006_youngfemale-word-hou-L1H06M hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hou-L1H06M is -4.79914 over 77 frames.
+yf006_youngfemale-word-hë-L1H06M hë 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hë-L1H06M is -4.72966 over 75 frames.
+yf006_youngfemale-word-hï-L1H06M hï 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-hï-L1H06M is -5.01728 over 69 frames.
+yf006_youngfemale-word-iwa-L1H06M-13a iwa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-iwa-L1H06M-13a is -4.93892 over 35 frames.
+yf006_youngfemale-word-iwa-L1H06M-13b1 iwa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-iwa-L1H06M-13b1 is -5.47654 over 31 frames.
+yf006_youngfemale-word-iwa-L1H06M-13b2 hï mao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-iwa-L1H06M-13b2 is -5.65594 over 33 frames.
+yf006_youngfemale-word-iwi-L1H06M-08 iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-iwi-L1H06M-08 is -4.65149 over 41 frames.
+yf006_youngfemale-word-karakia-L1H06M-16a karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-karakia-L1H06M-16a is -5.54045 over 40 frames.
+yf006_youngfemale-word-karakia-L1H06M-16b karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-karakia-L1H06M-16b is -6.42486 over 41 frames.
+yf006_youngfemale-word-karakia-L1H06M-16c karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-karakia-L1H06M-16c is -5.934 over 60 frames.
+yf006_youngfemale-word-kaumätua-L1H06M-06 kaumätua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kaumätua-L1H06M-06 is -5.17651 over 74 frames.
+yf006_youngfemale-word-kaumätua-L1H06M-16 mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kaumätua-L1H06M-16 is -5.83808 over 50 frames.
+yf006_youngfemale-word-kei-L1H06M kei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kei-L1H06M is -4.73353 over 55 frames.
+yf006_youngfemale-word-kuia-L1H06M-07 kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kuia-L1H06M-07 is -6.28408 over 32 frames.
+yf006_youngfemale-word-käinga-L1H06M-01 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-käinga-L1H06M-01 is -5.1565 over 32 frames.
+yf006_youngfemale-word-käinga-L1H06M-05a käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-käinga-L1H06M-05a is -5.50832 over 40 frames.
+yf006_youngfemale-word-käinga-L1H06M-05b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-käinga-L1H06M-05b is -5.02887 over 37 frames.
+yf006_youngfemale-word-käinga-L1H06M-15 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-käinga-L1H06M-15 is -4.90419 over 36 frames.
+yf006_youngfemale-word-kë-L1H06M kei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kë-L1H06M is -5.26613 over 63 frames.
+yf006_youngfemale-word-kï-L1H06M kï 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-kï-L1H06M is -5.03029 over 61 frames.
+yf006_youngfemale-word-körero-L1H06M-06 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-körero-L1H06M-06 is -5.35172 over 37 frames.
+yf006_youngfemale-word-körero-L1H06M-08 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-körero-L1H06M-08 is -5.45288 over 41 frames.
+yf006_youngfemale-word-körero-L1H06M-14 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-körero-L1H06M-14 is -5.82898 over 43 frames.
+yf006_youngfemale-word-körero-L1H06M-16 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-körero-L1H06M-16 is -5.17464 over 40 frames.
+yf006_youngfemale-word-mao-L1H06M mao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mao-L1H06M is -4.84269 over 74 frames.
+yf006_youngfemale-word-marae-L1H06M-13a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-13a is -5.23462 over 24 frames.
+yf006_youngfemale-word-marae-L1H06M-13b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-13b is -5.58103 over 22 frames.
+yf006_youngfemale-word-marae-L1H06M-13c marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-13c is -5.11062 over 27 frames.
+yf006_youngfemale-word-marae-L1H06M-13d marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-13d is -5.25291 over 36 frames.
+yf006_youngfemale-word-marae-L1H06M-14 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-14 is -4.94169 over 32 frames.
+yf006_youngfemale-word-marae-L1H06M-17 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-marae-L1H06M-17 is -4.79932 over 34 frames.
+yf006_youngfemale-word-matariki-L1H06M-01 matariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-matariki-L1H06M-01 is -5.58042 over 63 frames.
+yf006_youngfemale-word-matiu-L1H06M matiu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-matiu-L1H06M is -4.94202 over 91 frames.
+yf006_youngfemale-word-mau-L1H06M mau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mau-L1H06M is -5.33269 over 74 frames.
+yf006_youngfemale-word-moutere-L1H06M moutere 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-moutere-L1H06M is -5.49957 over 115 frames.
+yf006_youngfemale-word-mäori-L1H06M-05a mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mäori-L1H06M-05a is -4.68897 over 33 frames.
+yf006_youngfemale-word-mäori-L1H06M-05b mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mäori-L1H06M-05b is -4.56111 over 25 frames.
+yf006_youngfemale-word-mäori-L1H06M-06 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mäori-L1H06M-06 is -4.64447 over 37 frames.
+yf006_youngfemale-word-mäori-L1H06M-08 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mäori-L1H06M-08 is -4.5743 over 23 frames.
+yf006_youngfemale-word-mätao-L1H06M mätao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mätao-L1H06M is -4.48184 over 91 frames.
+yf006_youngfemale-word-mätau-L1H06M mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mätau-L1H06M is -4.69974 over 90 frames.
+yf006_youngfemale-word-mätou-L1H06M mätau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-mätou-L1H06M is -5.20066 over 89 frames.
+yf006_youngfemale-word-ono-L1H06M-06 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-ono-L1H06M-06 is -5.55895 over 23 frames.
+yf006_youngfemale-word-ono-L1H06M-13 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-ono-L1H06M-13 is -5.9263 over 17 frames.
+yf006_youngfemale-word-pae-L1H06M pae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pae-L1H06M is -4.79838 over 89 frames.
+yf006_youngfemale-word-pai-L1H06M pae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pai-L1H06M is -5.26162 over 86 frames.
+yf006_youngfemale-word-pao-L1H06M pao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pao-L1H06M is -4.90943 over 78 frames.
+yf006_youngfemale-word-pau-L1H06M pai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pau-L1H06M is -4.69582 over 72 frames.
+yf006_youngfemale-word-pou-L1H06M pau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pou-L1H06M is -4.88824 over 71 frames.
+yf006_youngfemale-word-pö-L1H06M pou 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-pö-L1H06M is -5.10276 over 65 frames.
+yf006_youngfemale-word-rima-L1H06M-10 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-rima-L1H06M-10 is -6.26253 over 30 frames.
+yf006_youngfemale-word-rima-L1H06M-12 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-rima-L1H06M-12 is -6.28216 over 26 frames.
+yf006_youngfemale-word-rima-L1H06M-13 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-rima-L1H06M-13 is -5.16125 over 24 frames.
+yf006_youngfemale-word-rua-L1H06M-06 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-rua-L1H06M-06 is -4.38677 over 22 frames.
+yf006_youngfemale-word-tae-L1H06M tae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tae-L1H06M is -4.6261 over 80 frames.
+yf006_youngfemale-word-tahi-L1H06M-03 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tahi-L1H06M-03 is -5.49305 over 26 frames.
+yf006_youngfemale-word-tahi-L1H06M-07 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tahi-L1H06M-07 is -5.49703 over 23 frames.
+yf006_youngfemale-word-tahi-L1H06M-13 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tahi-L1H06M-13 is -5.92419 over 26 frames.
+yf006_youngfemale-word-tahi-L1H06M-15 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tahi-L1H06M-15 is -5.29326 over 33 frames.
+yf006_youngfemale-word-tahi-L1H06M-16 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tahi-L1H06M-16 is -5.21042 over 32 frames.
+yf006_youngfemale-word-tai-L1H06M käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tai-L1H06M is -4.76686 over 78 frames.
+yf006_youngfemale-word-tamariki-L1H06M-01a tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tamariki-L1H06M-01a is -5.22363 over 54 frames.
+yf006_youngfemale-word-tamariki-L1H06M-01b tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tamariki-L1H06M-01b is -5.03405 over 50 frames.
+yf006_youngfemale-word-tangi-L1H06M-02 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tangi-L1H06M-02 is -6.26816 over 22 frames.
+yf006_youngfemale-word-tangi-L1H06M-14 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tangi-L1H06M-14 is -4.2871 over 39 frames.
+yf006_youngfemale-word-tekau-L1H06M-03 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-03 is -5.47867 over 25 frames.
+yf006_youngfemale-word-tekau-L1H06M-06 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-06 is -5.32815 over 37 frames.
+yf006_youngfemale-word-tekau-L1H06M-07 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-07 is -6.49357 over 21 frames.
+yf006_youngfemale-word-tekau-L1H06M-10a tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-10a is -5.7084 over 32 frames.
+yf006_youngfemale-word-tekau-L1H06M-10b tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-10b is -5.81656 over 28 frames.
+yf006_youngfemale-word-tekau-L1H06M-13a tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-13a is -5.59801 over 33 frames.
+yf006_youngfemale-word-tekau-L1H06M-13b kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-13b is -5.82946 over 29 frames.
+yf006_youngfemale-word-tekau-L1H06M-15 kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tekau-L1H06M-15 is -5.41621 over 40 frames.
+yf006_youngfemale-word-tikanga-L1H06M-05 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tikanga-L1H06M-05 is -5.26375 over 66 frames.
+yf006_youngfemale-word-tikanga-L1H06M-06 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tikanga-L1H06M-06 is -5.3198 over 43 frames.
+yf006_youngfemale-word-tikanga-L1H06M-08 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tikanga-L1H06M-08 is -5.25032 over 47 frames.
+yf006_youngfemale-word-toetoe-L1H06M toetoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-toetoe-L1H06M is -5.19739 over 90 frames.
+yf006_youngfemale-word-toi-L1H06M toi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-toi-L1H06M is -5.02873 over 83 frames.
+yf006_youngfemale-word-toru-L1H06M-03 toru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-toru-L1H06M-03 is -6.00559 over 25 frames.
+yf006_youngfemale-word-täne-L1H06M täne 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-täne-L1H06M is -4.68148 over 72 frames.
+yf006_youngfemale-word-tënei-L1H06M tënei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tënei-L1H06M is -5.27674 over 75 frames.
+yf006_youngfemale-word-tïmata-L1H06M-01 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tïmata-L1H06M-01 is -5.64708 over 48 frames.
+yf006_youngfemale-word-tïmata-L1H06M-12 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tïmata-L1H06M-12 is -4.97711 over 45 frames.
+yf006_youngfemale-word-tü-L1H06M kei 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-tü-L1H06M is -5.06979 over 57 frames.
+yf006_youngfemale-word-waka-L1H06M-09 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waka-L1H06M-09 is -6.72233 over 21 frames.
+yf006_youngfemale-word-waka-L1H06M-10a1 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waka-L1H06M-10a1 is -6.23899 over 37 frames.
+yf006_youngfemale-word-waka-L1H06M-10a2 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waka-L1H06M-10a2 is -5.53301 over 31 frames.
+yf006_youngfemale-word-waka-L1H06M-16 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waka-L1H06M-16 is -5.39549 over 40 frames.
+yf006_youngfemale-word-waru-L1H06M-13a whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waru-L1H06M-13a is -5.33191 over 24 frames.
+yf006_youngfemale-word-waru-L1H06M-13b whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-waru-L1H06M-13b is -4.67935 over 30 frames.
+yf006_youngfemale-word-whare-L1H06M-01 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whare-L1H06M-01 is -4.61602 over 28 frames.
+yf006_youngfemale-word-whare-L1H06M-09 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whare-L1H06M-09 is -5.8449 over 24 frames.
+yf006_youngfemale-word-whare-L1H06M-16 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whare-L1H06M-16 is -6.05702 over 26 frames.
+yf006_youngfemale-word-whitu-L1H06M-04 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whitu-L1H06M-04 is -5.6532 over 36 frames.
+yf006_youngfemale-word-whitu-L1H06M-18 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whitu-L1H06M-18 is -5.93921 over 31 frames.
+yf006_youngfemale-word-whä-L1H06M-03a whänau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whä-L1H06M-03a is -4.6113 over 34 frames.
+yf006_youngfemale-word-whä-L1H06M-03b whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whä-L1H06M-03b is -4.70435 over 30 frames.
+yf006_youngfemale-word-whä-L1H06M-12 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-whä-L1H06M-12 is -4.86465 over 48 frames.
+yf006_youngfemale-word-wä-L1H06M-03 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-wä-L1H06M-03 is -4.08339 over 24 frames.
+yf006_youngfemale-word-wä-L1H06M-04 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-wä-L1H06M-04 is -4.86723 over 26 frames.
+yf006_youngfemale-word-wä-L1H06M-05 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-wä-L1H06M-05 is -5.26088 over 16 frames.
+yf006_youngfemale-word-wä-L1H06M-06 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-wä-L1H06M-06 is -4.85063 over 25 frames.
+yf006_youngfemale-word-wähi-L1H06M-01 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf006_youngfemale-word-wähi-L1H06M-01 is -4.54408 over 38 frames.
+yf007_youngfemale-word-awa-L2H02M-13a awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-awa-L2H02M-13a is -5.19964 over 24 frames.
+yf007_youngfemale-word-awa-L2H02M-13b awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-awa-L2H02M-13b is -4.9698 over 39 frames.
+yf007_youngfemale-word-e_noho-L2H02M-04 e_noho 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-e_noho-L2H02M-04 is -5.19887 over 37 frames.
+yf007_youngfemale-word-hapü-L2H02M-10 matiu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-hapü-L2H02M-10 is -5.32176 over 61 frames.
+yf007_youngfemale-word-karakia-L2H02M-13 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-karakia-L2H02M-13 is -5.32846 over 48 frames.
+yf007_youngfemale-word-kete-L2H02M-06 kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-kete-L2H02M-06 is -5.04516 over 40 frames.
+yf007_youngfemale-word-kuia-L2H02M-12 kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-kuia-L2H02M-12 is -4.91302 over 36 frames.
+yf007_youngfemale-word-körero-L2H02M-04 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-körero-L2H02M-04 is -5.31383 over 38 frames.
+yf007_youngfemale-word-körero-L2H02M-05 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-körero-L2H02M-05 is -5.87104 over 44 frames.
+yf007_youngfemale-word-körero-L2H02M-07 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-körero-L2H02M-07 is -5.24791 over 40 frames.
+yf007_youngfemale-word-körero-L2H02M-10 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-körero-L2H02M-10 is -5.9373 over 33 frames.
+yf007_youngfemale-word-marae-L2H02M-04 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-04 is -4.92888 over 28 frames.
+yf007_youngfemale-word-marae-L2H02M-07a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-07a is -4.7215 over 27 frames.
+yf007_youngfemale-word-marae-L2H02M-07b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-07b is -4.50276 over 29 frames.
+yf007_youngfemale-word-marae-L2H02M-07c marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-07c is -4.46301 over 31 frames.
+yf007_youngfemale-word-marae-L2H02M-07d1 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-07d1 is -5.40545 over 34 frames.
+yf007_youngfemale-word-marae-L2H02M-07d2 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-07d2 is -4.2349 over 59 frames.
+yf007_youngfemale-word-marae-L2H02M-08a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-08a is -4.27467 over 29 frames.
+yf007_youngfemale-word-marae-L2H02M-08b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-marae-L2H02M-08b is -5.26635 over 24 frames.
+yf007_youngfemale-word-matariki-L2H02M-13 matariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-matariki-L2H02M-13 is -5.47343 over 51 frames.
+yf007_youngfemale-word-moana-L2H02M-03 moana 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-moana-L2H02M-03 is -4.77048 over 39 frames.
+yf007_youngfemale-word-mokopuna-L2H02M-09 mokopuna 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mokopuna-L2H02M-09 is -6.34989 over 44 frames.
+yf007_youngfemale-word-mäori-L2H02M-02 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mäori-L2H02M-02 is -4.98817 over 34 frames.
+yf007_youngfemale-word-mäori-L2H02M-06 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mäori-L2H02M-06 is -4.51765 over 29 frames.
+yf007_youngfemale-word-mäori-L2H02M-07 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mäori-L2H02M-07 is -5.4678 over 31 frames.
+yf007_youngfemale-word-mäori-L2H02M-08 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mäori-L2H02M-08 is -4.44581 over 30 frames.
+yf007_youngfemale-word-mäori-L2H02M-10 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-mäori-L2H02M-10 is -4.61188 over 25 frames.
+yf007_youngfemale-word-ono-L2H02M-05 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-ono-L2H02M-05 is -4.86654 over 28 frames.
+yf007_youngfemale-word-ono-L2H02M-06a1 ono awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-ono-L2H02M-06a1 is -5.94338 over 47 frames.
+yf007_youngfemale-word-ono-L2H02M-06a2 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-ono-L2H02M-06a2 is -4.76282 over 41 frames.
+yf007_youngfemale-word-rua-L2H02M-02 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-02 is -4.38516 over 17 frames.
+yf007_youngfemale-word-rua-L2H02M-04 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-04 is -5.04999 over 20 frames.
+yf007_youngfemale-word-rua-L2H02M-05 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-05 is -5.05654 over 19 frames.
+yf007_youngfemale-word-rua-L2H02M-07 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-07 is -4.49158 over 21 frames.
+yf007_youngfemale-word-rua-L2H02M-11a rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-11a is -4.78402 over 20 frames.
+yf007_youngfemale-word-rua-L2H02M-11b rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-11b is -5.16011 over 16 frames.
+yf007_youngfemale-word-rua-L2H02M-11c rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-11c is -5.21695 over 14 frames.
+yf007_youngfemale-word-rua-L2H02M-14 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-rua-L2H02M-14 is -5.43771 over 17 frames.
+yf007_youngfemale-word-tahi-L2H02M-02a tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-02a is -5.03324 over 25 frames.
+yf007_youngfemale-word-tahi-L2H02M-02b tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-02b is -4.79186 over 22 frames.
+yf007_youngfemale-word-tahi-L2H02M-02c tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-02c is -5.16574 over 27 frames.
+yf007_youngfemale-word-tahi-L2H02M-02d tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-02d is -4.66352 over 38 frames.
+yf007_youngfemale-word-tahi-L2H02M-03a tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-03a is -4.908 over 23 frames.
+yf007_youngfemale-word-tahi-L2H02M-03b tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-03b is -5.97197 over 29 frames.
+yf007_youngfemale-word-tahi-L2H02M-05 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-05 is -5.26344 over 23 frames.
+yf007_youngfemale-word-tahi-L2H02M-10 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-10 is -5.11648 over 19 frames.
+yf007_youngfemale-word-tahi-L2H02M-14 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tahi-L2H02M-14 is -4.8432 over 25 frames.
+yf007_youngfemale-word-tamariki-L2H02M-02 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tamariki-L2H02M-02 is -5.28528 over 33 frames.
+yf007_youngfemale-word-tamariki-L2H02M-06 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tamariki-L2H02M-06 is -5.35789 over 43 frames.
+yf007_youngfemale-word-tamariki-L2H02M-13a tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tamariki-L2H02M-13a is -5.47052 over 40 frames.
+yf007_youngfemale-word-tamariki-L2H02M-13b tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tamariki-L2H02M-13b is -5.02877 over 55 frames.
+yf007_youngfemale-word-tangi-L2H02M-14 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tangi-L2H02M-14 is -5.59458 over 31 frames.
+yf007_youngfemale-word-tauhou-L2H02M-13 tauhou 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tauhou-L2H02M-13 is -5.41919 over 47 frames.
+yf007_youngfemale-word-tekau-L2H02M-02 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tekau-L2H02M-02 is -5.51289 over 30 frames.
+yf007_youngfemale-word-tekau-L2H02M-06 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tekau-L2H02M-06 is -5.65061 over 23 frames.
+yf007_youngfemale-word-tekau-L2H02M-07 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tekau-L2H02M-07 is -5.11742 over 38 frames.
+yf007_youngfemale-word-tekau-L2H02M-08 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tekau-L2H02M-08 is -5.80065 over 34 frames.
+yf007_youngfemale-word-tikanga-L2H02M-03 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tikanga-L2H02M-03 is -5.76119 over 39 frames.
+yf007_youngfemale-word-tikanga-L2H02M-05 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tikanga-L2H02M-05 is -5.06573 over 44 frames.
+yf007_youngfemale-word-tïmata-L2H02M-12 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tïmata-L2H02M-12 is -5.89453 over 29 frames.
+yf007_youngfemale-word-tïmata-L2H02M-13 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-tïmata-L2H02M-13 is -5.06371 over 40 frames.
+yf007_youngfemale-word-türanga-L2H02M-09 türanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-türanga-L2H02M-09 is -5.08134 over 39 frames.
+yf007_youngfemale-word-waiata-L2H02M-03 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waiata-L2H02M-03 is -4.68757 over 28 frames.
+yf007_youngfemale-word-waiata-L2H02M-10a waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waiata-L2H02M-10a is -5.60976 over 50 frames.
+yf007_youngfemale-word-waiata-L2H02M-10b wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waiata-L2H02M-10b is -5.82625 over 40 frames.
+yf007_youngfemale-word-waiata-L2H02M-13 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waiata-L2H02M-13 is -4.79346 over 36 frames.
+yf007_youngfemale-word-waka-L2H02M-05 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waka-L2H02M-05 is -5.67767 over 27 frames.
+yf007_youngfemale-word-waru-L2H02M-04 waru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waru-L2H02M-04 is -5.75651 over 19 frames.
+yf007_youngfemale-word-waru-L2H02M-06 waru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-waru-L2H02M-06 is -5.20754 over 21 frames.
+yf007_youngfemale-word-whare-L2H02M-02 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whare-L2H02M-02 is -4.52264 over 30 frames.
+yf007_youngfemale-word-whare-L2H02M-09 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whare-L2H02M-09 is -4.90456 over 24 frames.
+yf007_youngfemale-word-whare-L2H02M-13 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whare-L2H02M-13 is -4.72223 over 30 frames.
+yf007_youngfemale-word-whitu-L2H02M-06 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whitu-L2H02M-06 is -6.30575 over 28 frames.
+yf007_youngfemale-word-whitu-L2H02M-07 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whitu-L2H02M-07 is -5.89289 over 35 frames.
+yf007_youngfemale-word-whitu-L2H02M-08 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whitu-L2H02M-08 is -6.00566 over 26 frames.
+yf007_youngfemale-word-whä-L2H02M-05 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whä-L2H02M-05 is -4.21634 over 38 frames.
+yf007_youngfemale-word-whä-L2H02M-06 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-whä-L2H02M-06 is -4.53892 over 29 frames.
+yf007_youngfemale-word-wä-L2H02M-03 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wä-L2H02M-03 is -4.87783 over 17 frames.
+yf007_youngfemale-word-wä-L2H02M-04 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wä-L2H02M-04 is -4.91864 over 15 frames.
+yf007_youngfemale-word-wä-L2H02M-10 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wä-L2H02M-10 is -5.46893 over 15 frames.
+yf007_youngfemale-word-wähi-L2H02M-02 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wähi-L2H02M-02 is -5.71811 over 38 frames.
+yf007_youngfemale-word-wähi-L2H02M-07 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wähi-L2H02M-07 is -5.23811 over 33 frames.
+yf007_youngfemale-word-wähi-L2H02M-11 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wähi-L2H02M-11 is -5.03022 over 34 frames.
+yf007_youngfemale-word-wähi-L2H02M-13 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf007_youngfemale-word-wähi-L2H02M-13 is -4.84625 over 31 frames.
+yf008_youngfemale-word-aroha-L2H03M-10 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-aroha-L2H03M-10 is -5.52574 over 33 frames.
+yf008_youngfemale-word-awa-L2H03M-13a wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-awa-L2H03M-13a is -5.11097 over 33 frames.
+yf008_youngfemale-word-awa-L2H03M-13b wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-awa-L2H03M-13b is -5.55233 over 34 frames.
+yf008_youngfemale-word-awa-L2H03M-13c ono wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-awa-L2H03M-13c is -5.67051 over 39 frames.
+yf008_youngfemale-word-e_noho-L2H03M-12 e_noho 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-e_noho-L2H03M-12 is -5.39268 over 35 frames.
+yf008_youngfemale-word-iwa-L2H03M-02a iwa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-02a is -5.26543 over 25 frames.
+yf008_youngfemale-word-iwa-L2H03M-02b kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-02b is -5.67853 over 30 frames.
+yf008_youngfemale-word-iwa-L2H03M-02c iwa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-02c is -5.29908 over 36 frames.
+yf008_youngfemale-word-iwa-L2H03M-03 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-03 is -5.39841 over 32 frames.
+yf008_youngfemale-word-iwa-L2H03M-09a iwa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-09a is -5.24212 over 53 frames.
+yf008_youngfemale-word-iwa-L2H03M-09b kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-09b is -5.75598 over 40 frames.
+yf008_youngfemale-word-iwa-L2H03M-10a 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-10a is -5.86431 over 30 frames.
+yf008_youngfemale-word-iwa-L2H03M-10b1 mao 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-10b1 is -5.23139 over 51 frames.
+yf008_youngfemale-word-iwa-L2H03M-10b2 kë wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-iwa-L2H03M-10b2 is -5.01555 over 45 frames.
+yf008_youngfemale-word-karakia-L2H03M-12 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-karakia-L2H03M-12 is -6.12928 over 43 frames.
+yf008_youngfemale-word-kaumätua-L2H03M-13 kaumätua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kaumätua-L2H03M-13 is -5.09436 over 79 frames.
+yf008_youngfemale-word-kete-L2H03M-04 kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kete-L2H03M-04 is -5.84736 over 23 frames.
+yf008_youngfemale-word-kia_ora-L2H03M-01 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kia_ora-L2H03M-01 is -5.297 over 48 frames.
+yf008_youngfemale-word-kuia-L2H03M-06a kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kuia-L2H03M-06a is -6.48261 over 29 frames.
+yf008_youngfemale-word-kuia-L2H03M-06b kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kuia-L2H03M-06b is -6.01992 over 22 frames.
+yf008_youngfemale-word-kuia-L2H03M-10 kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-kuia-L2H03M-10 is -5.92852 over 29 frames.
+yf008_youngfemale-word-käinga-L2H03M-02a käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-käinga-L2H03M-02a is -4.62579 over 56 frames.
+yf008_youngfemale-word-käinga-L2H03M-02b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-käinga-L2H03M-02b is -4.49775 over 42 frames.
+yf008_youngfemale-word-käinga-L2H03M-06 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-käinga-L2H03M-06 is -4.48093 over 46 frames.
+yf008_youngfemale-word-käinga-L2H03M-10 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-käinga-L2H03M-10 is -4.74093 over 53 frames.
+yf008_youngfemale-word-körero-L2H03M-02 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-körero-L2H03M-02 is -4.31747 over 60 frames.
+yf008_youngfemale-word-körero-L2H03M-06 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-körero-L2H03M-06 is -5.24067 over 42 frames.
+yf008_youngfemale-word-körero-L2H03M-08 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-körero-L2H03M-08 is -5.14888 over 49 frames.
+yf008_youngfemale-word-körero-L2H03M-12 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-körero-L2H03M-12 is -4.66676 over 61 frames.
+yf008_youngfemale-word-matariki-L2H03M-12 matariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-matariki-L2H03M-12 is -5.04346 over 59 frames.
+yf008_youngfemale-word-moana-L2H03M-04 moana 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-moana-L2H03M-04 is -4.01101 over 41 frames.
+yf008_youngfemale-word-mäori-L2H03M-04a mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04a is -4.55684 over 56 frames.
+yf008_youngfemale-word-mäori-L2H03M-04b mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04b is -4.2617 over 48 frames.
+yf008_youngfemale-word-mäori-L2H03M-04c mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04c is -4.78563 over 45 frames.
+yf008_youngfemale-word-mäori-L2H03M-04d mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04d is -4.68783 over 31 frames.
+yf008_youngfemale-word-mäori-L2H03M-04e mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04e is -4.35074 over 36 frames.
+yf008_youngfemale-word-mäori-L2H03M-04f mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-04f is -4.55924 over 46 frames.
+yf008_youngfemale-word-mäori-L2H03M-07 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-mäori-L2H03M-07 is -4.09922 over 42 frames.
+yf008_youngfemale-word-ono-L2H03M-09 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-ono-L2H03M-09 is -4.79819 over 36 frames.
+yf008_youngfemale-word-rua-L2H03M-02a1 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-rua-L2H03M-02a1 is -5.9729 over 20 frames.
+yf008_youngfemale-word-rua-L2H03M-02a2 kia_ora 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-rua-L2H03M-02a2 is -5.36132 over 22 frames.
+yf008_youngfemale-word-rua-L2H03M-02b 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-rua-L2H03M-02b is -5.70199 over 24 frames.
+yf008_youngfemale-word-rua-L2H03M-08 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-rua-L2H03M-08 is -5.39065 over 29 frames.
+yf008_youngfemale-word-tahi-L2H03M-02 tahi kë 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tahi-L2H03M-02 is -6.0374 over 35 frames.
+yf008_youngfemale-word-tahi-L2H03M-06 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tahi-L2H03M-06 is -4.69416 over 76 frames.
+yf008_youngfemale-word-tamariki-L2H03M-03 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tamariki-L2H03M-03 is -5.3919 over 58 frames.
+yf008_youngfemale-word-tamariki-L2H03M-05 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tamariki-L2H03M-05 is -4.75821 over 42 frames.
+yf008_youngfemale-word-tamariki-L2H03M-06 tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tamariki-L2H03M-06 is -5.60792 over 59 frames.
+yf008_youngfemale-word-tamariki-L2H03M-07a tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tamariki-L2H03M-07a is -4.82958 over 49 frames.
+yf008_youngfemale-word-tamariki-L2H03M-07b tamariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tamariki-L2H03M-07b is -4.56322 over 57 frames.
+yf008_youngfemale-word-tangi-L2H03M-13 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tangi-L2H03M-13 is -5.4853 over 20 frames.
+yf008_youngfemale-word-tauhou-L2H03M-12 tauhou 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tauhou-L2H03M-12 is -4.99308 over 50 frames.
+yf008_youngfemale-word-tekau-L2H03M-02a tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tekau-L2H03M-02a is -5.7195 over 33 frames.
+yf008_youngfemale-word-tekau-L2H03M-02b tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tekau-L2H03M-02b is -4.8827 over 32 frames.
+yf008_youngfemale-word-tekau-L2H03M-02c käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tekau-L2H03M-02c is -5.50173 over 43 frames.
+yf008_youngfemale-word-tekau-L2H03M-03 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tekau-L2H03M-03 is -5.82126 over 37 frames.
+yf008_youngfemale-word-tekau-L2H03M-09 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tekau-L2H03M-09 is -5.1118 over 41 frames.
+yf008_youngfemale-word-tikanga-L2H03M-02 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tikanga-L2H03M-02 is -5.48163 over 38 frames.
+yf008_youngfemale-word-tikanga-L2H03M-12 tekau 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tikanga-L2H03M-12 is -5.83812 over 40 frames.
+yf008_youngfemale-word-tïmata-L2H03M-03a tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tïmata-L2H03M-03a is -5.2896 over 46 frames.
+yf008_youngfemale-word-tïmata-L2H03M-03b tikanga tae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tïmata-L2H03M-03b is -5.02214 over 68 frames.
+yf008_youngfemale-word-tïmata-L2H03M-08 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tïmata-L2H03M-08 is -5.0365 over 44 frames.
+yf008_youngfemale-word-tïmata-L2H03M-12 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-tïmata-L2H03M-12 is -5.81663 over 45 frames.
+yf008_youngfemale-word-waka-L2H03M-13 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-waka-L2H03M-13 is -5.38212 over 30 frames.
+yf008_youngfemale-word-waru-L2H03M-09 waru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-waru-L2H03M-09 is -4.98056 over 46 frames.
+yf008_youngfemale-word-whare-L2H03M-04 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whare-L2H03M-04 is -5.14541 over 30 frames.
+yf008_youngfemale-word-whare-L2H03M-06 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whare-L2H03M-06 is -4.8205 over 27 frames.
+yf008_youngfemale-word-whare-L2H03M-10 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whare-L2H03M-10 is -4.83725 over 25 frames.
+yf008_youngfemale-word-whare-L2H03M-12 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whare-L2H03M-12 is -5.00546 over 36 frames.
+yf008_youngfemale-word-whitu-L2H03M-02a whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whitu-L2H03M-02a is -5.21165 over 33 frames.
+yf008_youngfemale-word-whitu-L2H03M-02b whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whitu-L2H03M-02b is -5.29071 over 49 frames.
+yf008_youngfemale-word-whitu-L2H03M-09 whitu tü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-whitu-L2H03M-09 is -5.07583 over 68 frames.
+yf008_youngfemale-word-wä-L2H03M-03 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wä-L2H03M-03 is -4.57793 over 20 frames.
+yf008_youngfemale-word-wä-L2H03M-07 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wä-L2H03M-07 is -4.80477 over 25 frames.
+yf008_youngfemale-word-wä-L2H03M-08 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wä-L2H03M-08 is -5.0477 over 28 frames.
+yf008_youngfemale-word-wä-L2H03M-10a wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wä-L2H03M-10a is -4.04698 over 30 frames.
+yf008_youngfemale-word-wä-L2H03M-10b wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wä-L2H03M-10b is -4.28197 over 23 frames.
+yf008_youngfemale-word-wähi-L2H03M-03a wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wähi-L2H03M-03a is -4.69313 over 40 frames.
+yf008_youngfemale-word-wähi-L2H03M-03b wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wähi-L2H03M-03b is -4.23391 over 38 frames.
+yf008_youngfemale-word-wähi-L2H03M-04 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wähi-L2H03M-04 is -5.8275 over 30 frames.
+yf008_youngfemale-word-wähi-L2H03M-08 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wähi-L2H03M-08 is -4.24751 over 64 frames.
+yf008_youngfemale-word-wähi-L2H03M-12 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf008_youngfemale-word-wähi-L2H03M-12 is -4.5404 over 36 frames.
+yf009_youngfemale-word-aroha-L2H04M-03 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-aroha-L2H04M-03 is -5.3512 over 27 frames.
+yf009_youngfemale-word-aroha-L2H04M-04 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-aroha-L2H04M-04 is -5.04971 over 34 frames.
+yf009_youngfemale-word-aroha-L2H04M-05 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-aroha-L2H04M-05 is -5.06488 over 40 frames.
+yf009_youngfemale-word-aroha-L2H04M-09 aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-aroha-L2H04M-09 is -5.33807 over 33 frames.
+yf009_youngfemale-word-e_noho-L2H04M-14 e_noho 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-e_noho-L2H04M-14 is -4.57888 over 39 frames.
+yf009_youngfemale-word-haere_mai-L2H04M-07a haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-haere_mai-L2H04M-07a is -4.54154 over 41 frames.
+yf009_youngfemale-word-haere_mai-L2H04M-07b maunga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-haere_mai-L2H04M-07b is -4.8744 over 45 frames.
+yf009_youngfemale-word-hapü-L2H04M-09a hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-hapü-L2H04M-09a is -4.89988 over 40 frames.
+yf009_youngfemale-word-hapü-L2H04M-09b hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-hapü-L2H04M-09b is -6.11125 over 33 frames.
+yf009_youngfemale-word-iwa-L2H04M-02a1 iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwa-L2H04M-02a1 is -5.00694 over 39 frames.
+yf009_youngfemale-word-iwa-L2H04M-02a2 iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwa-L2H04M-02a2 is -5.78224 over 24 frames.
+yf009_youngfemale-word-iwi-L2H04M-09a iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwi-L2H04M-09a is -4.488 over 37 frames.
+yf009_youngfemale-word-iwi-L2H04M-09b iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwi-L2H04M-09b is -4.68159 over 24 frames.
+yf009_youngfemale-word-iwi-L2H04M-09c iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwi-L2H04M-09c is -3.59883 over 23 frames.
+yf009_youngfemale-word-iwi-L2H04M-09d iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwi-L2H04M-09d is -3.49907 over 20 frames.
+yf009_youngfemale-word-iwi-L2H04M-14 iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-iwi-L2H04M-14 is -4.76258 over 33 frames.
+yf009_youngfemale-word-karakia-L2H04M-10 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karakia-L2H04M-10 is -4.44615 over 48 frames.
+yf009_youngfemale-word-karakia-L2H04M-14 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karakia-L2H04M-14 is -5.11625 over 51 frames.
+yf009_youngfemale-word-karanga-L2H04M-06a karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06a is -5.75469 over 36 frames.
+yf009_youngfemale-word-karanga-L2H04M-06b karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06b is -5.91723 over 33 frames.
+yf009_youngfemale-word-karanga-L2H04M-06c karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06c is -5.37378 over 30 frames.
+yf009_youngfemale-word-karanga-L2H04M-06d karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06d is -5.39587 over 32 frames.
+yf009_youngfemale-word-karanga-L2H04M-06e karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06e is -6.01033 over 32 frames.
+yf009_youngfemale-word-karanga-L2H04M-06f karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-06f is -5.03581 over 31 frames.
+yf009_youngfemale-word-karanga-L2H04M-08 karanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-karanga-L2H04M-08 is -4.57437 over 37 frames.
+yf009_youngfemale-word-kaumätua-L2H04M-08 kaumätua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kaumätua-L2H04M-08 is -4.95552 over 55 frames.
+yf009_youngfemale-word-kuia-L2H04M-03 kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-03 is -4.64153 over 31 frames.
+yf009_youngfemale-word-kuia-L2H04M-06a kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-06a is -5.02945 over 31 frames.
+yf009_youngfemale-word-kuia-L2H04M-06b kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-06b is -5.12603 over 30 frames.
+yf009_youngfemale-word-kuia-L2H04M-07 kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-07 is -4.92472 over 30 frames.
+yf009_youngfemale-word-kuia-L2H04M-09a kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-09a is -4.16892 over 26 frames.
+yf009_youngfemale-word-kuia-L2H04M-09b kuia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-kuia-L2H04M-09b is -5.13609 over 38 frames.
+yf009_youngfemale-word-käinga-L2H04M-04 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-04 is -5.02658 over 44 frames.
+yf009_youngfemale-word-käinga-L2H04M-05 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-05 is -4.77665 over 40 frames.
+yf009_youngfemale-word-käinga-L2H04M-08a hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-08a is -4.41864 over 37 frames.
+yf009_youngfemale-word-käinga-L2H04M-08b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-08b is -4.87231 over 25 frames.
+yf009_youngfemale-word-käinga-L2H04M-08c hoe 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-08c is -4.78922 over 69 frames.
+yf009_youngfemale-word-käinga-L2H04M-12a käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-12a is -4.4067 over 50 frames.
+yf009_youngfemale-word-käinga-L2H04M-12b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-12b is -4.55951 over 34 frames.
+yf009_youngfemale-word-käinga-L2H04M-12c käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-12c is -4.43724 over 40 frames.
+yf009_youngfemale-word-käinga-L2H04M-14 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-käinga-L2H04M-14 is -4.92029 over 34 frames.
+yf009_youngfemale-word-körero-L2H04M-03 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-körero-L2H04M-03 is -4.86625 over 50 frames.
+yf009_youngfemale-word-körero-L2H04M-04 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-körero-L2H04M-04 is -5.16295 over 55 frames.
+yf009_youngfemale-word-körero-L2H04M-05 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-körero-L2H04M-05 is -5.19564 over 39 frames.
+yf009_youngfemale-word-körero-L2H04M-07 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-körero-L2H04M-07 is -5.62458 over 37 frames.
+yf009_youngfemale-word-marae-L2H04M-06a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-06a is -5.31988 over 25 frames.
+yf009_youngfemale-word-marae-L2H04M-06b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-06b is -4.77966 over 26 frames.
+yf009_youngfemale-word-marae-L2H04M-07a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-07a is -5.08695 over 30 frames.
+yf009_youngfemale-word-marae-L2H04M-07b aroha 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-07b is -4.52315 over 29 frames.
+yf009_youngfemale-word-marae-L2H04M-08a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-08a is -4.53761 over 31 frames.
+yf009_youngfemale-word-marae-L2H04M-08b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-08b is -4.78807 over 29 frames.
+yf009_youngfemale-word-marae-L2H04M-08c marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-08c is -4.4398 over 40 frames.
+yf009_youngfemale-word-marae-L2H04M-10 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-10 is -4.04637 over 28 frames.
+yf009_youngfemale-word-marae-L2H04M-13a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-13a is -4.44866 over 34 frames.
+yf009_youngfemale-word-marae-L2H04M-13b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-13b is -4.53159 over 33 frames.
+yf009_youngfemale-word-marae-L2H04M-13c marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-13c is -5.00196 over 28 frames.
+yf009_youngfemale-word-marae-L2H04M-13d1 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-13d1 is -4.55679 over 36 frames.
+yf009_youngfemale-word-marae-L2H04M-13d2 marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-marae-L2H04M-13d2 is -4.92368 over 30 frames.
+yf009_youngfemale-word-matariki-L2H04M-14 matariki 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-matariki-L2H04M-14 is -4.87238 over 61 frames.
+yf009_youngfemale-word-mokopuna-L2H04M-03 mokopuna 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-mokopuna-L2H04M-03 is -5.17138 over 42 frames.
+yf009_youngfemale-word-mäori-L2H04M-02 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-mäori-L2H04M-02 is -5.04627 over 33 frames.
+yf009_youngfemale-word-mäori-L2H04M-03a mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-mäori-L2H04M-03a is -4.78886 over 46 frames.
+yf009_youngfemale-word-mäori-L2H04M-03b mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-mäori-L2H04M-03b is -4.54628 over 34 frames.
+yf009_youngfemale-word-mäori-L2H04M-11 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-mäori-L2H04M-11 is -4.52036 over 48 frames.
+yf009_youngfemale-word-rima-L2H04M-03 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rima-L2H04M-03 is -4.14566 over 27 frames.
+yf009_youngfemale-word-rima-L2H04M-10 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rima-L2H04M-10 is -4.75549 over 26 frames.
+yf009_youngfemale-word-rima-L2H04M-12a rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rima-L2H04M-12a is -4.61398 over 34 frames.
+yf009_youngfemale-word-rima-L2H04M-12b rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rima-L2H04M-12b is -5.06204 over 29 frames.
+yf009_youngfemale-word-rima-L2H04M-12c rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rima-L2H04M-12c is -4.33271 over 37 frames.
+yf009_youngfemale-word-rua-L2H04M-07a1 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-07a1 is -4.40181 over 26 frames.
+yf009_youngfemale-word-rua-L2H04M-07a2 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-07a2 is -4.27614 over 36 frames.
+yf009_youngfemale-word-rua-L2H04M-07a3 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-07a3 is -4.05547 over 28 frames.
+yf009_youngfemale-word-rua-L2H04M-08a rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-08a is -4.55153 over 25 frames.
+yf009_youngfemale-word-rua-L2H04M-08b rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-08b is -5.42026 over 24 frames.
+yf009_youngfemale-word-rua-L2H04M-09 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-09 is -4.27361 over 30 frames.
+yf009_youngfemale-word-rua-L2H04M-11 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-11 is -4.77406 over 33 frames.
+yf009_youngfemale-word-rua-L2H04M-13 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-rua-L2H04M-13 is -4.43901 over 24 frames.
+yf009_youngfemale-word-tahi-L2H04M-04 tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-tahi-L2H04M-04 is -4.4611 over 25 frames.
+yf009_youngfemale-word-tahi-L2H04M-07a tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-tahi-L2H04M-07a is -4.86386 over 32 frames.
+yf009_youngfemale-word-tahi-L2H04M-07b tahi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-tahi-L2H04M-07b is -5.47263 over 28 frames.
+yf009_youngfemale-word-tangi-L2H04M-15 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-tangi-L2H04M-15 is -4.54329 over 20 frames.
+yf009_youngfemale-word-toru-L2H04M-02 toru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-toru-L2H04M-02 is -5.29709 over 41 frames.
+yf009_youngfemale-word-toru-L2H04M-04 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-toru-L2H04M-04 is -5.24266 over 31 frames.
+yf009_youngfemale-word-toru-L2H04M-05 toru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-toru-L2H04M-05 is -4.54051 over 34 frames.
+yf009_youngfemale-word-tïmata-L2H04M-14 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-tïmata-L2H04M-14 is -4.90883 over 53 frames.
+yf009_youngfemale-word-waewae-L2H04M-06a waewae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-waewae-L2H04M-06a is -4.83818 over 31 frames.
+yf009_youngfemale-word-waewae-L2H04M-06b 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-waewae-L2H04M-06b is -6.08226 over 32 frames.
+yf009_youngfemale-word-waiata-L2H04M-14 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-waiata-L2H04M-14 is -4.68017 over 45 frames.
+yf009_youngfemale-word-waka-L2H04M-13 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-waka-L2H04M-13 is -5.01845 over 35 frames.
+yf009_youngfemale-word-waru-L2H04M-05 waru 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-waru-L2H04M-05 is -4.67603 over 22 frames.
+yf009_youngfemale-word-whare-L2H04M-04 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-whare-L2H04M-04 is -5.31013 over 20 frames.
+yf009_youngfemale-word-whare-L2H04M-08 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-whare-L2H04M-08 is -4.72582 over 40 frames.
+yf009_youngfemale-word-whitu-L2H04M-05 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-whitu-L2H04M-05 is -5.43463 over 28 frames.
+yf009_youngfemale-word-whä-L2H04M-02 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-whä-L2H04M-02 is -4.9165 over 37 frames.
+yf009_youngfemale-word-wä-L2H04M-02 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-wä-L2H04M-02 is -5.06519 over 30 frames.
+yf009_youngfemale-word-wä-L2H04M-03 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-wä-L2H04M-03 is -4.75046 over 17 frames.
+yf009_youngfemale-word-wä-L2H04M-04 wä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-wä-L2H04M-04 is -4.48372 over 30 frames.
+yf009_youngfemale-word-wähi-L2H04M-06 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-wähi-L2H04M-06 is -4.36958 over 31 frames.
+yf009_youngfemale-word-wähi-L2H04M-07 wähi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf009_youngfemale-word-wähi-L2H04M-07 is -4.89244 over 29 frames.
+yf010_youngfemale-word-awa-L2H05M-15a awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-awa-L2H05M-15a is -4.74455 over 36 frames.
+yf010_youngfemale-word-awa-L2H05M-15b awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-awa-L2H05M-15b is -4.56241 over 32 frames.
+yf010_youngfemale-word-awa-L2H05M-15c awa 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-awa-L2H05M-15c is -4.71116 over 45 frames.
+yf010_youngfemale-word-e_noho-L2H05M-15 e_noho pö 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-e_noho-L2H05M-15 is -5.10352 over 46 frames.
+yf010_youngfemale-word-haere_mai-L2H05M-06 haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-haere_mai-L2H05M-06 is -4.81601 over 52 frames.
+yf010_youngfemale-word-haere_mai-L2H05M-09a haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-haere_mai-L2H05M-09a is -4.36829 over 39 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 564 utterances, errors on 0
+yf010_youngfemale-word-haere_mai-L2H05M-09b haere_mai 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-haere_mai-L2H05M-09b is -4.57336 over 37 frames.
+yf010_youngfemale-word-hapü-L2H05M-02 kë 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-hapü-L2H05M-02 is -5.10594 over 43 frames.
+yf010_youngfemale-word-hapü-L2H05M-07 hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-hapü-L2H05M-07 is -4.821 over 37 frames.
+yf010_youngfemale-word-hapü-L2H05M-13 hapü 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-hapü-L2H05M-13 is -5.4523 over 26 frames.
+yf010_youngfemale-word-iwi-L2H05M-15 iwi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-iwi-L2H05M-15 is -4.67989 over 25 frames.
+yf010_youngfemale-word-karakia-L2H05M-15 karakia 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-karakia-L2H05M-15 is -4.60094 over 59 frames.
+yf010_youngfemale-word-kaumätua-L2H05M-15 kaumätua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-kaumätua-L2H05M-15 is -4.72925 over 85 frames.
+yf010_youngfemale-word-käinga-L2H05M-02 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-käinga-L2H05M-02 is -5.33766 over 42 frames.
+yf010_youngfemale-word-käinga-L2H05M-09 käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-käinga-L2H05M-09 is -4.94577 over 31 frames.
+yf010_youngfemale-word-käinga-L2H05M-15a käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-käinga-L2H05M-15a is -4.45694 over 56 frames.
+yf010_youngfemale-word-käinga-L2H05M-15b käinga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-käinga-L2H05M-15b is -4.70365 over 34 frames.
+yf010_youngfemale-word-körero-L2H05M-06 körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-körero-L2H05M-06 is -5.51533 over 33 frames.
+yf010_youngfemale-word-körero-L2H05M-08a körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-körero-L2H05M-08a is -5.15618 over 27 frames.
+yf010_youngfemale-word-körero-L2H05M-08b körero 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-körero-L2H05M-08b is -5.24568 over 30 frames.
+yf010_youngfemale-word-marae-L2H05M-02a marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-marae-L2H05M-02a is -4.78673 over 33 frames.
+yf010_youngfemale-word-marae-L2H05M-02b marae 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-marae-L2H05M-02b is -4.77677 over 36 frames.
+yf010_youngfemale-word-moana-L2H05M-10 moana 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-moana-L2H05M-10 is -5.02915 over 27 frames.
+yf010_youngfemale-word-mäori-L2H05M-06 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-mäori-L2H05M-06 is -4.74038 over 38 frames.
+yf010_youngfemale-word-mäori-L2H05M-10 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-mäori-L2H05M-10 is -4.07801 over 30 frames.
+yf010_youngfemale-word-mäori-L2H05M-12 mäori 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-mäori-L2H05M-12 is -4.76827 over 34 frames.
+yf010_youngfemale-word-ono-L2H05M-09 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-ono-L2H05M-09 is -4.72343 over 28 frames.
+yf010_youngfemale-word-ono-L2H05M-12 ono 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-ono-L2H05M-12 is -5.24209 over 26 frames.
+yf010_youngfemale-word-rima-L2H05M-05 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-05 is -5.79319 over 22 frames.
+yf010_youngfemale-word-rima-L2H05M-06 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-06 is -5.94119 over 27 frames.
+yf010_youngfemale-word-rima-L2H05M-09a rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-09a is -5.48797 over 26 frames.
+yf010_youngfemale-word-rima-L2H05M-09b rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-09b is -5.65413 over 26 frames.
+yf010_youngfemale-word-rima-L2H05M-10 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-10 is -4.98424 over 33 frames.
+yf010_youngfemale-word-rima-L2H05M-11 rima 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rima-L2H05M-11 is -5.30018 over 29 frames.
+yf010_youngfemale-word-rua-L2H05M-02a1 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rua-L2H05M-02a1 is -4.95836 over 32 frames.
+yf010_youngfemale-word-rua-L2H05M-02a2 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rua-L2H05M-02a2 is -4.99893 over 25 frames.
+yf010_youngfemale-word-rua-L2H05M-05 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rua-L2H05M-05 is -4.70192 over 28 frames.
+yf010_youngfemale-word-rua-L2H05M-09 rua 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-rua-L2H05M-09 is -5.19895 over 24 frames.
+yf010_youngfemale-word-tangi-L2H05M-16 tangi 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tangi-L2H05M-16 is -4.80705 over 23 frames.
+yf010_youngfemale-word-tikanga-L2H05M-05 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tikanga-L2H05M-05 is -4.98975 over 31 frames.
+yf010_youngfemale-word-tikanga-L2H05M-11 tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tikanga-L2H05M-11 is -5.0733 over 33 frames.
+yf010_youngfemale-word-tikanga-L2H05M-14a tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tikanga-L2H05M-14a is -5.56286 over 38 frames.
+yf010_youngfemale-word-tikanga-L2H05M-14b tikanga 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tikanga-L2H05M-14b is -4.87973 over 34 frames.
+yf010_youngfemale-word-tïmata-L2H05M-05 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tïmata-L2H05M-05 is -5.10861 over 52 frames.
+yf010_youngfemale-word-tïmata-L2H05M-11 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tïmata-L2H05M-11 is -5.11193 over 59 frames.
+yf010_youngfemale-word-tïmata-L2H05M-14 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tïmata-L2H05M-14 is -4.95582 over 53 frames.
+yf010_youngfemale-word-tïmata-L2H05M-15 tïmata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-tïmata-L2H05M-15 is -6.18629 over 49 frames.
+yf010_youngfemale-word-waiata-L2H05M-15 waiata 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-waiata-L2H05M-15 is -4.51996 over 51 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is 37.9074 over 23051 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 564 utterances; 0 had errors.
+yf010_youngfemale-word-waka-L2H05M-08 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-waka-L2H05M-08 is -5.5175 over 20 frames.
+yf010_youngfemale-word-waka-L2H05M-15 waka 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-waka-L2H05M-15 is -4.67823 over 53 frames.
+yf010_youngfemale-word-waru-L2H05M-09 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-waru-L2H05M-09 is -4.87149 over 23 frames.
+yf010_youngfemale-word-waru-L2H05M-11 whare 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-waru-L2H05M-11 is -4.85259 over 22 frames.
+yf010_youngfemale-word-whitu-L2H05M-05 kete 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whitu-L2H05M-05 is -5.29623 over 35 frames.
+yf010_youngfemale-word-whitu-L2H05M-09 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whitu-L2H05M-09 is -5.84834 over 28 frames.
+yf010_youngfemale-word-whitu-L2H05M-12 whitu 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whitu-L2H05M-12 is -5.44619 over 35 frames.
+yf010_youngfemale-word-whä-L2H05M-06a1 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whä-L2H05M-06a1 is -4.15492 over 54 frames.
+yf010_youngfemale-word-whä-L2H05M-06a2 whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whä-L2H05M-06a2 is -4.01528 over 32 frames.
+yf010_youngfemale-word-whä-L2H05M-06b whä 
+LOG (gmm-latgen-faster[5.2.132~9-82686]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance yf010_youngfemale-word-whä-L2H05M-06b is -4.4491 over 32 frames.
+LOG (gmm-latgen-faster[5.2.132~9-82686]:main():gmm-latgen-faster.cc:176) Time taken 24.1722s: real-time factor assuming 100 frames/sec is 0.104864
+LOG (gmm-latgen-faster[5.2.132~9-82686]:main():gmm-latgen-faster.cc:179) Done 564 utterances, failed for 0
+LOG (gmm-latgen-faster[5.2.132~9-82686]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -5.0191 over 23051 frames.
+# Accounting: time=24 threads=1
+# Ended (code 0) at Thu Nov  9 17:32:57 NZDT 2017, elapsed time 24 seconds

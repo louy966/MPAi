@@ -1,0 +1,31 @@
+# gmm-est --mix-up=4240 --power=0.25 --write-occs=exp/tri1/9.occs exp/tri1/8.mdl "gmm-sum-accs - exp/tri1/8.*.acc |" exp/tri1/9.mdl 
+# Started at Thu Nov  9 13:49:06 NZDT 2017
+#
+gmm-est --mix-up=4240 --power=0.25 --write-occs=exp/tri1/9.occs exp/tri1/8.mdl 'gmm-sum-accs - exp/tri1/8.*.acc |' exp/tri1/9.mdl 
+gmm-sum-accs - exp/tri1/8.1.acc exp/tri1/8.2.acc exp/tri1/8.3.acc exp/tri1/8.4.acc 
+LOG (gmm-sum-accs[5.2.132~9-82686]:main():gmm-sum-accs.cc:63) Summed 4 stats, total count 93175, avg like/frame -96.4736
+LOG (gmm-sum-accs[5.2.132~9-82686]:main():gmm-sum-accs.cc:66) Total count of stats is 93175
+LOG (gmm-sum-accs[5.2.132~9-82686]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.2.132~9-82686]:MleUpdate():transition-model.cc:517) TransitionModel::Update, objf change is 0 per frame over 93175 frames. 
+LOG (gmm-est[5.2.132~9-82686]:MleUpdate():transition-model.cc:520) 10 probabilities floored, 903 out of 1357 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.2.132~9-82686]:main():gmm-est.cc:102) Transition model update: Overall 0 log-like improvement per frame over 93175 frames.
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.041371, occupation count 9.225635, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.046802, occupation count 9.453933, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.039423, occupation count 9.106610, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.034291, occupation count 8.778592, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.037141, occupation count 9.025155, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.031937, occupation count 7.856469, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.026352, occupation count 8.274405, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.056947, occupation count 9.908838, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.057519, occupation count 9.720717, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.045290, occupation count 9.465678, vector size 39)
+WARNING (gmm-est[5.2.132~9-82686]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.038844, occupation count 9.827642, vector size 39)
+LOG (gmm-est[5.2.132~9-82686]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 0 variance elements floored in 0 Gaussians, out of 3909
+LOG (gmm-est[5.2.132~9-82686]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 11 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.2.132~9-82686]:main():gmm-est.cc:113) GMM update: Overall 0.300271 objective function improvement per frame over 93175 frames
+LOG (gmm-est[5.2.132~9-82686]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -96.4736 over 93175 frames.
+LOG (gmm-est[5.2.132~9-82686]:SplitByCount():am-diag-gmm.cc:116) Split 358 states with target = 4240, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 3909 to 4240
+LOG (gmm-est[5.2.132~9-82686]:main():gmm-est.cc:146) Written model to exp/tri1/9.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Nov  9 13:49:06 NZDT 2017, elapsed time 0 seconds

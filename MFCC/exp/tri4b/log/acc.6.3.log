@@ -1,0 +1,28 @@
+# gmm-acc-stats-ali exp/tri4b/6.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split4/3/utt2spk ark:exp/tri4b/trans.3 ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri4b/ali.3.gz|" exp/tri4b/6.3.acc 
+# Started at Thu Nov  9 13:56:34 NZDT 2017
+#
+gmm-acc-stats-ali exp/tri4b/6.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split4/3/utt2spk ark:exp/tri4b/trans.3 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri4b/ali.3.gz|' exp/tri4b/6.3.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/train/split4/3/utt2spk ark:exp/tri4b/trans.3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance m002_oldmale-word-karanga-K002M-07c avg. like is -58.2266 over 30 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance m002_oldmale-word-ono-K002M-07c1 avg. like is -56.2061 over 22 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance m002_oldmale-word-tïmata-K002M-06a avg. like is -56.7718 over 42 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance m002_oldmale-word-whä-K002M-09b avg. like is -50.6582 over 29 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance m003_oldmale-word-kia_ora-K003M-04 avg. like is -65.893 over 34 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance m003_oldmale-word-mokopuna-K003M-05b avg. like is -53.2101 over 54 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance m004_oldmale-word-aroha-K004M-09b avg. like is -52.9919 over 23 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance m004_oldmale-word-kaumätua-K004M-11 avg. like is -51.8543 over 70 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance m004_oldmale-word-mäori-K004M-05 avg. like is -57.7358 over 33 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 548 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance m004_oldmale-word-tikanga-K004M-06 avg. like is -58.6578 over 32 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -84.1848 over 19361 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 548 utterances; 0 had errors.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average logdet is 3.24723 over 19361 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 548 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:112) Done 548 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -53.7851 over 19361 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Nov  9 13:56:34 NZDT 2017, elapsed time 0 seconds

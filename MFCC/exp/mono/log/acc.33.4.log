@@ -1,0 +1,25 @@
+# gmm-acc-stats-ali exp/mono/33.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |" "ark:gunzip -c exp/mono/ali.4.gz|" exp/mono/33.4.acc 
+# Started at Thu Nov  9 13:48:10 NZDT 2017
+#
+gmm-acc-stats-ali exp/mono/33.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.4.gz|' exp/mono/33.4.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance m005_oldmale-word-käinga-K005M-01a avg. like is -102.312 over 36 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance m005_oldmale-word-pao-K005M avg. like is -91.9542 over 46 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance m005_oldmale-word-tënei-K005M avg. like is -95.6732 over 57 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance m006_oldmale-word-awa-K006M-06b avg. like is -97.3067 over 36 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance m006_oldmale-word-tü-K006M avg. like is -97.4766 over 42 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance m007_oldmale-word-karanga-K007M-09c avg. like is -105.276 over 27 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance m007_oldmale-word-taringa-K007M-08b avg. like is -104.095 over 33 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance m008_oldmale-word-matiu-K008M avg. like is -100.805 over 57 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance m009_oldmale-word-e_noho-K009M-12 avg. like is -97.6664 over 42 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance m009_oldmale-word-marae-K009M-02c avg. like is -98.5225 over 29 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance m009_oldmale-word-tahi-K009M-01 avg. like is -103.271 over 25 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance m010_oldmale-word-kuia-K010M-07c avg. like is -105.401 over 36 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 689 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance m010_oldmale-word-rua-K010M-01b avg. like is -98.1308 over 18 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:112) Done 689 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -100.212 over 26003 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  9 13:48:11 NZDT 2017, elapsed time 1 seconds

@@ -1,0 +1,705 @@
+# ali-to-post "ark:gunzip -c exp/tri2b/ali.1.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri2b/4.mdl ark:- ark:- | gmm-acc-mllt --rand-prune=4.0 exp/tri2b/4.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b/2.mat ark:- ark:- |" ark:- exp/tri2b/4.1.macc 
+# Started at Thu Nov  9 17:25:29 NZDT 2017
+#
+ali-to-post 'ark:gunzip -c exp/tri2b/ali.1.gz|' ark:- 
+gmm-acc-mllt --rand-prune=4.0 exp/tri2b/4.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b/2.mat ark:- ark:- |' ark:- exp/tri2b/4.1.macc 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri2b/4.mdl ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri2b/2.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- 
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1009 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.1681 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2266 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.3662 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.3092 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.9024 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.2199 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.5391 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.884 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.8773 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -51.6426
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.3235 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.9141 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.2916 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.991 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.3736 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.6701 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.1888 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.1493 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.5043 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.2164 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -51.8857
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.3486 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5106 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1021 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7908 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1919 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.8834 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -65.5963 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.6653 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.101 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2627 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.1066
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.6336 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.3524 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.5641 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.2381 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.5117 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.2488 over 64 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.4495 over 70 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.1108 over 69 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.8498 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.1888 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.383
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.0869 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.2223 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.7032 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.9219 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.9112 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.3604 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.3229 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.072 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.3674 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2286 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.7049
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.8399 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.66 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.7682 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0958 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4001 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.3633 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.0821 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.9767 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.0737 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.7316 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.348
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.4906 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5141 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6278 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.6382 over 18 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.7253 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.1951 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.8581 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.9669 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.0193 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.6798 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.1104
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.6412 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.5474 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.195 over 54 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.5942 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.2705 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.1725 over 70 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.4909 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.1116 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4414 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2339 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.2277
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.8873 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.6588 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5175 over 59 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.9711 over 76 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5465 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.176 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.1376 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.0365 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.8338 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.4906 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.8546
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.6857 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.716 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.8674 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.273 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.6926 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.7044 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5271 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7976 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9124 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.1851 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.991
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.1774 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.658 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.774 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.2303 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.6558 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.0307 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.3983 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.6407 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4574 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.3858 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.0506
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.132 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.8518 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2857 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.7371 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.5551 over 52 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.0411 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.0015 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6487 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4574 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.2082 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.2803
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.4815 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.7457 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.4576 over 71 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.6793 over 70 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.7039 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.0823 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.2518 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.9591 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4446 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.9709 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.0993
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.103 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0793 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.6158 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2116 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.1221 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.8843 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.1674 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.33 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.8121 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.5711 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.1009
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.5208 over 64 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.4686 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0751 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.2182 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.44 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.7055 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5699 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7077 over 20 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.8745 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1047 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.2368
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.8003 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7186 over 55 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.5922 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.8471 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.3598 over 19 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.3013 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.7597 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5739 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.0545 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5335 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.3042
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0997 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.5576 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.3162 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.7731 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.1413 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.9408 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.824 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.6806 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.7972 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.8993 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -54.0104
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.6453 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.3898 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.0752 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4913 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.984 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.2597 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.1409 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.0667 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.8894 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.1223 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.5866
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -39.922 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.8221 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.0636 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.9151 over 17 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.9703 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.4288 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.7781 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.8454 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.6581 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.9962 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.4238
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.7306 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.4225 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7061 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.6475 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.8056 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.1591 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.2532 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.6017 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.9788 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6513 over 65 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.3953
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.4507 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.3796 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.2668 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.3448 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.9318 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.1892 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.3558 over 57 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2136 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.5989 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.2976 over 54 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.3008
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1713 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4247 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.5592 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.8669 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.4986 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.383 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.5428 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1249 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.7677 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.853 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.3334
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.8401 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.0548 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.0763 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.7443 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.4134 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.7942 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7758 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.899 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.2041 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4696 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.3197
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4602 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.8009 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.4983 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.2365 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.1407 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.3716 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.5556 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.2845 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4825 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.0993 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.2376
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9797 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.8581 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.5363 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0222 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.8897 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.6919 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.7038 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.0779 over 56 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9953 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.8652 over 55 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0929
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.4893 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -66.9893 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2946 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.214 over 80 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9768 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.8977 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.5247 over 60 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.669 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7349 over 20 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.6359 over 16 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.1544
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.5932 over 20 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5564 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4693 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.8019 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.9835 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.0464 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.1182 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.9503 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4761 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.504 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0905
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.3276 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.3431 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9025 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4973 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.8573 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.4435 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.095 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.4232 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.0003 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.3142 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.1257
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.5099 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.66 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.4501 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.3979 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.9083 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.0431 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.9233 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.1653 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1558 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.9259 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.1903
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4758 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.9011 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.9178 over 71 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.7723 over 52 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.4031 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -40.3577 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.6867 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.0766 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.6042 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.1856 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.123
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.4279 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5487 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.4488 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.1548 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.9927 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.9906 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.5848 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.1241 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -64.118 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6126 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.1935
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.5441 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.6735 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.0118 over 60 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.1897 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.0231 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2734 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.7332 over 60 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.1549 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.7027 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.9236 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0718
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.0441 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5188 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.9049 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.1274 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.7552 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.5128 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -65.4122 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.7636 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.8989 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.8145 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0323
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.6758 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.7853 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7062 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.7114 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5641 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.7036 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.0548 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.8062 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.7739 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5496 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0005
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2824 over 73 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -42.0772 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -40.3883 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.2285 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.0345 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.391 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.2001 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.3378 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.9644 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.1455 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.8894
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.6375 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.2226 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.3792 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.8879 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.2277 over 71 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5541 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -42.1329 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.8733 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.9771 over 54 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7968 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7694
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.56 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.3379 over 16 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.133 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.6251 over 60 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2414 over 56 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.9897 over 77 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.3704 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.1944 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.1359 over 71 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.6166 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7218
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.7711 over 92 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.3079 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.2634 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.861 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5787 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.3858 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.3666 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.6471 over 13 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.8934 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.0649 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6162
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6972 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.9305 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.8203 over 55 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.3669 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.7038 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7943 over 55 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.564 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.7112 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.7877 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.5692 over 65 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6835
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.9915 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.3773 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.0801 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.511 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.9873 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.8183 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.2343 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.9289 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.4053 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.6217 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6947
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.5882 over 62 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.977 over 52 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.87 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.5455 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.0154 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.294 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.5881 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0998 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5171 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.7998 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7356
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.524 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.6621 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.8307 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.1176 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.9159 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4229 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.3382 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.2765 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.3847 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.2761 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.8086
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9221 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.6913 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.1864 over 20 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4168 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.2187 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.758 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2502 over 37 frames.
+LOG (ali-to-post[5.2.132~9-82686]:main():ali-to-post.cc:73) Converted 624 alignments.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.6776 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.9921 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.6518 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7644
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.3991 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.5541 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4402 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4274 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.0609 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.6042 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.6669 over 57 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.2772 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -37.6566 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.5312 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6156
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1484 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.876 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.1338 over 19 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.8366 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.4864 over 68 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.1404 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.5993 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.2013 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.3341 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.9524 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6953
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0874 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.1829 over 57 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9876 over 68 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.1425 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.177 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.52 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -38.6266 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -42.532 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.9945 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.4944 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6083
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.8095 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.5982 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.8716 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1336 over 64 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1316 over 54 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.9809 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.2389 over 59 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.392 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.3817 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.6516 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.5737
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.9971 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.5041 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5284 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.9923 over 81 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.8953 over 91 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.0295 over 63 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.3228 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4875 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.7709 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.8282 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.4493
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -41.8744 over 45 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.36 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.5592 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.6829 over 19 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.8727 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.4753 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0936 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.9118 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4677 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.237 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.4218
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.3569 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1491 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4629 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.3887 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.3783 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2799 over 55 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.4635 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.2194 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.7043 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.0056 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.4548
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.7345 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.9007 over 33 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.4277 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.2323 over 44 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.5538 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.5304 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.1635 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.774 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.9184 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9498 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.491
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.2399 over 56 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -64.4373 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.1507 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.3413 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.6155 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.5435 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.8173 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.665 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0448 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.6321 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.545
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.3748 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0672 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.985 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.9248 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -45.2607 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.7846 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2447 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.4976 over 26 frames.
+LOG (weight-silence-post[5.2.132~9-82686]:main():weight-silence-post.cc:95) Done 624 posteriors.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.0373 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.993 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.5481
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.3673 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.043 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.0287 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.1994 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.3646 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9368 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.8834 over 41 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.746 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.7808 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -63.1265 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.5599
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.4629 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -43.3066 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.9227 over 50 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9643 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.25 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.1347 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -69.2901 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7186 over 53 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.9705 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2193 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.5895
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.637 over 67 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7004 over 70 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.4758 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.2439 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.7174 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -65.5472 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.3205 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.8235 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.3462 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.9685 over 54 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.6805
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9107 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.4785 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.6372 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.959 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.8415 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.1433 over 36 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -51.375 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.0851 over 60 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.8926 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.9838 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7457
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.7233 over 52 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -64.1362 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.8149 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.8718 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.2706 over 49 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.3039 over 36 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 624 utterances, errors on 0
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -49.1999 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.2566 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.1174 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.4188 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.7955
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -44.8755 over 39 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.9062 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.5475 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.4248 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.4541 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.3316 over 35 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0127 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.6885 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.221 over 28 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7549 over 23 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.803
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.871 over 20 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.2604 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.7904 over 48 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.5238 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.1003 over 43 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.7645 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -56.2389 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.8844 over 63 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -50.478 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -52.0608 over 67 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.8477
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.3534 over 29 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -62.1973 over 34 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -64.9003 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.9585 over 38 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.5022 over 37 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -61.2231 over 40 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.5256 over 61 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -66.1187 over 24 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -53.4241 over 26 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.8582 over 58 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -52.9439
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -48.521 over 51 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -60.7978 over 64 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.9304 over 47 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.1769 over 26 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is 35.4541 over 25080 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 624 utterances; 0 had errors.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.5286 over 46 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.8317 over 42 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.3124 over 25 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -57.0738 over 22 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -59.8481 over 21 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -58.927 over 31 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:114) Avg like per frame so far is -53.0159
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -55.6777 over 30 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -54.3929 over 32 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -46.6399 over 18 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:108) Average like for this file is -47.8211 over 27 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:119) Done 624 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:123) Overall avg like per frame (Gaussian only) = -53.0103 over 23396 frames.
+LOG (gmm-acc-mllt[5.2.132~9-82686]:main():gmm-acc-mllt.cc:127) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  9 17:25:30 NZDT 2017, elapsed time 1 seconds

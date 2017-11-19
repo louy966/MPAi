@@ -1,0 +1,30 @@
+# gmm-acc-stats-ali exp/tri3b/31.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split4/1/utt2spk ark:exp/tri3b/trans.1 ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri3b/ali.1.gz|" exp/tri3b/31.1.acc 
+# Started at Thu Nov  9 13:52:34 NZDT 2017
+#
+gmm-acc-stats-ali exp/tri3b/31.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split4/1/utt2spk ark:exp/tri3b/trans.1 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri3b/ali.1.gz|' exp/tri3b/31.1.acc 
+transform-feats --utt2spk=ark:data/train/split4/1/utt2spk ark:exp/tri3b/trans.1 ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- 
+transform-feats exp/tri2b_ali/final.mat ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance f001_oldfemale-word-kuia-R001M-02b avg. like is -57.0809 over 22 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance f001_oldfemale-word-rima-R001M-06a avg. like is -44.9693 over 29 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance f001_oldfemale-word-tïmata-R001M-16 avg. like is -54.0789 over 48 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance f002_oldfemale-word-hoihoi-R002M avg. like is -46.3731 over 71 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance f002_oldfemale-word-mau-R002M avg. like is -41.3463 over 59 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance f002_oldfemale-word-waewae-R002M-06 avg. like is -46.3614 over 47 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance f003_oldfemale-word-kuia-R003M-04 avg. like is -55.7914 over 40 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance f003_oldfemale-word-türanga-R003M-05 avg. like is -59.1073 over 40 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance f004_oldfemale-word-karakia-R004M-03c avg. like is -56.048 over 40 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance f004_oldfemale-word-tikanga-R004M-02 avg. like is -54.6362 over 31 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance f005_oldfemale-word-karanga-R005M-09 avg. like is -52.9512 over 37 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 624 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance f005_oldfemale-word-tauhou-R005M-12c avg. like is -45.5688 over 67 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -84.1848 over 25080 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 624 utterances; 0 had errors.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:158) Overall average logdet is 3.90171 over 25080 frames.
+LOG (transform-feats[5.2.132~9-82686]:main():transform-feats.cc:161) Applied transform to 624 utterances; 0 had errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:112) Done 624 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -49.2012 over 25080 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  9 13:52:35 NZDT 2017, elapsed time 1 seconds

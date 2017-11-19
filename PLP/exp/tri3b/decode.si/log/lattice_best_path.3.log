@@ -1,0 +1,7 @@
+# ali-to-phones --per-frame=true exp/tri3b/decode.si/../final.mdl "ark:gunzip -c exp/tri3b/decode.si/ali_tmp.3.gz|" ark,t:- | paste /dev/stdin <( gunzip -c exp/tri3b/decode.si/depth_tmp.3.gz ) | awk '{ half=NF/2; for (n=2; n<=half; n++) { m=n+half; count[$n " " $m]++;}} END{for(k in count) print k, count[k]; }' | gzip -c > exp/tri3b/decode.si/depth_stats_tmp.3.gz 
+# Started at Thu Nov  9 17:28:21 NZDT 2017
+#
+ali-to-phones --per-frame=true exp/tri3b/decode.si/../final.mdl 'ark:gunzip -c exp/tri3b/decode.si/ali_tmp.3.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.132~9-82686]:main():ali-to-phones.cc:134) Done 537 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Nov  9 17:28:21 NZDT 2017, elapsed time 0 seconds

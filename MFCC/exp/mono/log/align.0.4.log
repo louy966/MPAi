@@ -1,0 +1,38 @@
+# align-equal-compiled "ark:gunzip -c exp/mono/fsts.4.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |" ark:- exp/mono/0.4.acc 
+# Started at Thu Nov  9 13:47:22 NZDT 2017
+#
+gmm-acc-stats-ali --binary=true exp/mono/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |' ark:- exp/mono/0.4.acc 
+align-equal-compiled 'ark:gunzip -c exp/mono/fsts.4.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas ark:- ark:- |' ark,t:- 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+WARNING (align-equal-compiled[5.2.132~9-82686]:EqualAlign():fstext/fstext-utils-inl.h:876) EqualAlign: the randomly constructed paths lengths: 21,26,29,27,27,26,29,28,31,29
+WARNING (align-equal-compiled[5.2.132~9-82686]:EqualAlign():fstext/fstext-utils-inl.h:877) EqualAlign: utterance has too few frames 18 to align.
+WARNING (align-equal-compiled[5.2.132~9-82686]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence m005_oldmale-word-kia_ora-K005M-03
+WARNING (align-equal-compiled[5.2.132~9-82686]:EqualAlign():fstext/fstext-utils-inl.h:876) EqualAlign: the randomly constructed paths lengths: 16,17,16,22,21,16,17,19,18,18
+WARNING (align-equal-compiled[5.2.132~9-82686]:EqualAlign():fstext/fstext-utils-inl.h:877) EqualAlign: utterance has too few frames 15 to align.
+WARNING (align-equal-compiled[5.2.132~9-82686]:main():align-equal-compiled.cc:100) AlignEqual: did not align utterence m007_oldmale-word-iwi-K007M-05
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 689 utterances, errors on 0
+WARNING (align-equal-compiled[5.2.132~9-82686]:main():align-equal-compiled.cc:109) Computed 687 alignments; 0 lacked features, 2 had other errors.
+WARNING (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance m005_oldmale-word-kia_ora-K005M-03
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance m005_oldmale-word-käinga-K005M-01b avg. like is -110.279 over 49 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance m005_oldmale-word-pau-K005M avg. like is -108.336 over 37 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance m005_oldmale-word-tü-K005M avg. like is -114.452 over 44 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance m006_oldmale-word-awa-K006M-07 avg. like is -111.568 over 40 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance m006_oldmale-word-waiata-K006M-03a avg. like is -123.1 over 36 frames.
+WARNING (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance m007_oldmale-word-iwi-K007M-05
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance m007_oldmale-word-kei-K007M avg. like is -112.413 over 46 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance m007_oldmale-word-toetoe-K007M avg. like is -114.352 over 64 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance m008_oldmale-word-mihi-K008M-04a avg. like is -106.49 over 30 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance m009_oldmale-word-haere_mai-K009M-05 avg. like is -112.747 over 50 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance m009_oldmale-word-marae-K009M-05a avg. like is -107.48 over 33 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance m009_oldmale-word-tahi-K009M-03b avg. like is -112.391 over 25 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance m010_oldmale-word-kuia-K010M-07e avg. like is -117.458 over 27 frames.
+LOG (apply-cmvn[5.2.132~9-82686]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 689 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance m010_oldmale-word-rua-K010M-01d avg. like is -117.367 over 20 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:112) Done 687 files, 2 with errors.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -113.8 over 25970 frames.
+LOG (gmm-acc-stats-ali[5.2.132~9-82686]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  9 13:47:23 NZDT 2017, elapsed time 1 seconds
